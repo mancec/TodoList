@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <form  id="deleteUserForm" method="POST" action="/tasks/{{ $task->id }}">
+        <form  id="editTask" method="POST" action="/tasks/{{ $task->id }}">
             @csrf
             @method('PUT')
 
