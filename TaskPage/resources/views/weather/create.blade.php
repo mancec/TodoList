@@ -9,7 +9,7 @@
             @csrf
             @method('PUT')
 
-                <div class="col-sm-6">
+                <div class="col-sm-6" style="width: 20%">
                     <label>Email</label>
                     <input type="email" name="email" id="email" class="form-control">
                 </div>
