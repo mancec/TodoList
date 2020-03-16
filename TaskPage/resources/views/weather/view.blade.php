@@ -23,5 +23,7 @@
             <label>Wind speed:</label>
             {{ $weather['wind']['speed'] }}
         </div>
+
+        <a href="{{ url('/weather/email') }}">Add alert email</a>
     </div>
 @endsection

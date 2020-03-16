@@ -36,30 +36,39 @@ class WeatherController extends Controller
 
     public function checkWind()
     {
-        $weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=Kaunas&appid=" .env('WEATHER_API_KEY') . "&units=metric";
-        $json = file_get_contents($weatherUrl);
-        $weather = json_decode($json);
-        $windSpeed = $weather->wind->speed;
-        $tempSpeed = 14;
+        $city = DB::table('weathers')->get()->first();
 
-        $users = User::all();
+        $client = new Client(['verify' => false]);
+        try {
+            $response = $client->request("Get",
+                "https://api.openweathermap.org/data/2.5/weather?q=". $city->city ."&appid=" .
+                env('WEATHER_API_KEY') . "&units=metric");
 
-        if ($windSpeed > 10 && $tempSpeed < 10)
-        {
-            foreach ($users as $user) {
-                if($user->alertEmail != null)
-                Mail::to($user->alertEmail)->send(new WeatherMail("greater"));
-            }
-            $tempSpeed = $windSpeed;
+        } catch (RequestException $e) {
+            abort(403, 'Sorry such city does not exist');
         }
-        else if ($windSpeed < 10 && $tempSpeed > 10)
-        {
-            foreach ($users as $user) {
-                if($user->alertEmail != null)
-                Mail::to($user->alertEmail)->send(new WeatherMail("lower"));
+        if ($response->getStatusCode() == 200) {
+            $weather = json_decode($response->getBody(), true);
+            $windSpeed = $weather['wind']['speed'];
+            $tempSpeed = 14;
+
+            $users = User::all();
+
+            if ($windSpeed > 10 && $tempSpeed < 10) {
+                foreach ($users as $user) {
+                    if ($user->alertEmail != null)
+                        Mail::to($user->alertEmail)->send(new WeatherMail("greater"));
+                }
+                $tempSpeed = $windSpeed;
+            } else if ($windSpeed < 10 && $tempSpeed > 10) {
+                foreach ($users as $user) {
+                    if ($user->alertEmail != null)
+                        Mail::to($user->alertEmail)->send(new WeatherMail("lower"));
+                }
+                $tempSpeed = $windSpeed;
             }
-            $tempSpeed = $windSpeed;
-        }
+        } else
+            abort(403, 'Could not reach the weather server');
     }
 
 
