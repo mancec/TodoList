@@ -12,6 +12,9 @@ login into  openweathermap.org to see weather information
 7. run php artisan migrate
 8. run php artisan serve
 
+# Completed:
+1. Task CRUD
+2. Weather view and aler
 
 # Used technologies:
 

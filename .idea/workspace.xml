@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c91ab32f-22eb-41b9-92ca-f4e25ca9958c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskPage/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/TaskPage/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskPage/app/Http/Controllers/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/TaskPage/app/Http/Controllers/WeatherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskPage/resources/views/weather/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/TaskPage/resources/views/weather/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskPage/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskPage/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/TaskPage/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TaskPage/app/Http/Controllers/WeatherController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-986">
@@ -47,12 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TaskPage/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <first_editor relative-caret-position="272">
+                <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -157,8 +152,8 @@
         <option value="$PROJECT_DIR$/TaskPage/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/TaskPage/routes/web.php" />
         <option value="$PROJECT_DIR$/TaskPage/resources/views/weather/view.blade.php" />
-        <option value="$PROJECT_DIR$/TaskPage/README.md" />
         <option value="$PROJECT_DIR$/TaskPage/app/Http/Controllers/WeatherController.php" />
+        <option value="$PROJECT_DIR$/TaskPage/README.md" />
       </list>
     </option>
   </component>
@@ -427,12 +422,12 @@
       <workItem from="1584046464368" duration="6992000" />
       <workItem from="1584100576995" duration="598000" />
       <workItem from="1584208749973" duration="18536000" />
-      <workItem from="1584271044952" duration="31761000" />
+      <workItem from="1584271044952" duration="32060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57887000" />
+    <option name="totallyTimeSpent" value="58186000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,8 +440,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27506113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27506113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Command Line Tools Console" weight="0.32922733" />
@@ -460,7 +456,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32138857" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32138857" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -759,16 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TaskPage/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TaskPage/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -807,6 +793,16 @@
           <folding>
             <element signature="e#40#62#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TaskPage/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
